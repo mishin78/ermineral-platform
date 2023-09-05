@@ -1,4 +1,5 @@
-import styles from './page.module.css'
+//import styles from './page.module.css'
+import styles from './styles.sass'
 // import Contacts from './contacts'
 
 export default function Header() {
