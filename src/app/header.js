@@ -7,7 +7,7 @@ export default function Header() {
  
     return (
         <nav>
-            <h1 className='titleLogo'>ERMINERAL</h1>
+            <h1 className='titleLogo'>ERMINERAL<span className='r'>®</span></h1>
             <ul>
                 <li>Partnership </li>
                 <span>|</span>
