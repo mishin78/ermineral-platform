@@ -10,7 +10,6 @@ export default function Home() {
     <main className={styles.main}>
       <Header />
       <InstructionLink />
-      <div className={styles.game}><h1>Game</h1></div>
     </main>
   )
 }

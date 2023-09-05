@@ -10,17 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  background: white;
-  padding-bottom: 3rem;
-}
-
-ul {
-  padding: 0 2rem;
-  font-size: 1.3rem;
-  color: #494949;
-}
-
 li {
   list-style: circle;
   padding: 0.2rem;
