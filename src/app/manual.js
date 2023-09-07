@@ -1,44 +1,36 @@
 'use client'
-import styles from './page.module.css'
+import './styles.sass'
 import { useState } from 'react'
-import LangButton from './langButton'
 
 export default function Manual() {
     const [lang, setLang] = useState('ua')
 
     return (
-        <div className={styles.Instruction}>
+        <div className='instruction'>
             {lang === 'en' && <>
-            <div className={styles.instructionHeader}>
-                <h1 className={styles.aboutTitle}>Instruction</h1>
-                <div className={styles.buttonBox}>
-                    <LangButton state={'en'} text={'en'} setLang={setLang}/>
-                    <LangButton state={'ua'} text={'ua'} setLang={setLang}/>
-                </div>
-            </div>
-            <hr className={styles.line} />
-            <p className={styles.text}>General characteristics: basic physical and chemical properties: yellow-brown liquid, with a fragrant odor, sediment is allowed.</p>
-            <p className={styles.text}>Ingredients: 1 bottle contains tincture of honey, chamomile, fresh ginger, black caraway seeds, Roman caraway seeds, cloves, garlic, lemon, sunflower petals, rose petals, apple vinegar.</p>
-            <p className={styles.text}>Release form. Tincture.</p>
-            <p className={styles.text}>Pharmacotherapeutic group. Immunomodulatory and antiviral agent. The effectiveness of the tincture is due to a wide range of biological activity: anti-inflammatory, anti proliferative, antiviral, immunomodulatory.</p>
-            <p className={styles.text}>Indications for use. Used by adults and children as immunomodulator a substance that affects the body's defenses and biostimulant (substances that increase metabolism, stimulate body defenses) in conditions and diseases, accompanied by a decrease in immunity, including acute and chronic suppurative inflammatory diseases of bones and soft tissues; acute and chronic viral and bacterial infections.</p>
-            <p className={styles.text}>Dosage and mode of application. Tincture is taken with water. Tincture is appointed to be taken inside for adults 5-10 drops 1-2 times a day for 1 months. Repeated courses are carried out in 1-2 weeks. Best effect is observed when taking tincture for 3-4 months.
+            <h1>Instruction</h1> 
+            <p>General characteristics: basic physical and chemical properties: yellow-brown liquid, with a fragrant odor, sediment is allowed.</p>
+            <p>Ingredients: 1 bottle contains tincture of honey, chamomile, fresh ginger, black caraway seeds, Roman caraway seeds, cloves, garlic, lemon, sunflower petals, rose petals, apple vinegar.</p>
+            <p>Release form. Tincture.</p>
+            <p>Pharmacotherapeutic group. Immunomodulatory and antiviral agent. The effectiveness of the tincture is due to a wide range of biological activity: anti-inflammatory, anti proliferative, antiviral, immunomodulatory.</p>
+            <p>Indications for use. Used by adults and children as immunomodulator a substance that affects the body's defenses and biostimulant (substances that increase metabolism, stimulate body defenses) in conditions and diseases, accompanied by a decrease in immunity, including acute and chronic suppurative inflammatory diseases of bones and soft tissues; acute and chronic viral and bacterial infections.</p>
+            <p>Dosage and mode of application. Tincture is taken with water. Tincture is appointed to be taken inside for adults 5-10 drops 1-2 times a day for 1 months. Repeated courses are carried out in 1-2 weeks. Best effect is observed when taking tincture for 3-4 months.
                 Children aged 1-5 years, 1 drop 2 times a day before meals. Children over 12 years old 5 drops 2 times a day before meals.
                 Pregnant and nursing 10-15 drops 3 times a day.</p>
-            <p className={styles.text}>Side effect. There were no tincture side effects revealed. Yet if symptoms like weakness, dizziness and nausea appear, no worries. This is due to the toxins derivation from the body. If these symptoms occur, do a one-day break, after which taking of the tincture can be continued.</p>
-            <p className={styles.text}>Contraindications. Increased individual sensitivity to substances that are contained in the tincture.</p>
-            <p className={styles.text}>Interaction with other medicines. Those patients who take medicines should take the tincture 30 minutes before or 30 minutes after taking medicines.</p>
-            <p className={styles.text}>Features of the application. It is better to take tincture between meals or after eating. If there are problems with the stomach, it is better to take the tincture before eating. Tincture can be dripped directly on abrasions and open wounds. The effectiveness of the tincture increases if after taking you provide physical activity. For example, walking, jogging, squats, push-ups, etc.
+            <p>Side effect. There were no tincture side effects revealed. Yet if symptoms like weakness, dizziness and nausea appear, no worries. This is due to the toxins derivation from the body. If these symptoms occur, do a one-day break, after which taking of the tincture can be continued.</p>
+            <p>Contraindications. Increased individual sensitivity to substances that are contained in the tincture.</p>
+            <p>Interaction with other medicines. Those patients who take medicines should take the tincture 30 minutes before or 30 minutes after taking medicines.</p>
+            <p>Features of the application. It is better to take tincture between meals or after eating. If there are problems with the stomach, it is better to take the tincture before eating. Tincture can be dripped directly on abrasions and open wounds. The effectiveness of the tincture increases if after taking you provide physical activity. For example, walking, jogging, squats, push-ups, etc.
                 After taking the tincture for more than 1 month, to enhance the effect, you can take the tincture orally (dripping in the mouth) in a concentrated form not diluting with water. For patients with severe illness, take 4 drops three times a day during first 2 days. Then follow the usual instructions.
                 The effectiveness and reaction of the body to the tincture in the initial periods of its adoption varies. It depends on the characteristics of the body (metabolism) of each individual.
             </p>
-            <p className={styles.text}>Overdose. No.</p>
-            <p className={styles.text}>Terms and conditions of storage. Store in a cool, protected from sunlight and inaccessible to children place.</p>
-            <p className={styles.text}>Warning. Do not mix tincture with hot water.</p>
-            <p className={styles.text}>Shelf life. 3 years.</p>
-            <p className={styles.text}>Release conditions: Without a prescription.</p>
-            <p className={styles.text}>Packaging. 30 ml in bottles.</p>
-            <p className={styles.text}>Application examples.</p>
+            <p>Overdose. No.</p>
+            <p>Terms and conditions of storage. Store in a cool, protected from sunlight and inaccessible to children place.</p>
+            <p>Warning. Do not mix tincture with hot water.</p>
+            <p>Shelf life. 3 years.</p>
+            <p>Release conditions: Without a prescription.</p>
+            <p>Packaging. 30 ml in bottles.</p>
+            <p>Application examples.</p>
             <ul>As an antioxidant and to strengthen immunity:
                 <li>Toddlers 1-5 years old: 1 drop, 2 times a day.</li>
                 <li>Children under 12 years: 5 drops, 2 times a day.</li>
@@ -94,24 +86,17 @@ export default function Manual() {
             </ul> </>}
 
             {lang === 'ua' && <>
-            <div className={styles.instructionHeader}>
-                <h1 className={styles.aboutTitle}>Інструкція</h1>
-                <div className={styles.buttonBox}>
-                    <LangButton state={'en'} text={'en'} setLang={setLang}/>
-                    <LangButton state={'ua'} text={'ua'} setLang={setLang}/>
-                </div>
-            </div>
-            <hr className={styles.line} />
-            <p className={styles.text}>Основні фізико-хімічні властивості: розчин жовто-коричневого кольору, з ароматним запахом, допускається наявність осаду. </p>
-            <p className={styles.text}>Склад: 1 флакон містить настоянку з меду, ромашки, свіжого імбиру, чорного кмину, римського кмину, гвоздики, часнику, лимона, пелюсток соняшнику, пелюсток троянд, яблуневого оцту.</p>
-            <p className={styles.text}>Форма випуску. Настоянка.</p>
-            <p className={styles.text}>Фармакотерапевтична група. Імуномоделюючий і противірусний засіб. Ефективність препарату обумовлена широким спектром біологічної активності: протизапальна, антипроліферативна, противірусна, імуномоделююча. </p>
-            <p className={styles.text}>Показання до застосування. Застосовують у дорослих та дітей як імуномодулятор речовина, що впливає на захисту силу організму і біостимулятор (речовина, що підвищує обмін речовин, стимулює захисні сили організму) при станах і захворюваннях, що супроводжуються пониженням імунітету, в тому числі при гострих і хронічних гнійно-запальних захворюваннях кісток і м'яких тканин; гострих і хронічних вірусних і бактеріальних інфекціях</p>
-            <p className={styles.text}>Спосіб застосування дози. Настоянка приймається з водою. Настоянку назначають всередину дорослим по 5-10 крапель 1-2 рази на добу протягом місяця. Повторні курси проводять через 1-2 тижня. Найкращий ефект спостерігається при прийомі настоянки протягом 3-4 місяців.
+            <h1>Інструкція</h1>
+            <p>Основні фізико-хімічні властивості: розчин жовто-коричневого кольору, з ароматним запахом, допускається наявність осаду. </p>
+            <p>Склад: 1 флакон містить настоянку з меду, ромашки, свіжого імбиру, чорного кмину, римського кмину, гвоздики, часнику, лимона, пелюсток соняшнику, пелюсток троянд, яблуневого оцту.</p>
+            <p>Форма випуску. Настоянка.</p>
+            <p>Фармакотерапевтична група. Імуномоделюючий і противірусний засіб. Ефективність препарату обумовлена широким спектром біологічної активності: протизапальна, антипроліферативна, противірусна, імуномоделююча. </p>
+            <p>Показання до застосування. Застосовують у дорослих та дітей як імуномодулятор речовина, що впливає на захисту силу організму і біостимулятор (речовина, що підвищує обмін речовин, стимулює захисні сили організму) при станах і захворюваннях, що супроводжуються пониженням імунітету, в тому числі при гострих і хронічних гнійно-запальних захворюваннях кісток і м'яких тканин; гострих і хронічних вірусних і бактеріальних інфекціях</p>
+            <p>Спосіб застосування дози. Настоянка приймається з водою. Настоянку назначають всередину дорослим по 5-10 крапель 1-2 рази на добу протягом місяця. Повторні курси проводять через 1-2 тижня. Найкращий ефект спостерігається при прийомі настоянки протягом 3-4 місяців.
                                        Дітям віком 1-5 років по 1 краплі двічі на добу до прийому їжі. Дітям віком старше 12 років по 5 краплин двічі на добу до прийому їжі. Вагітним та годуючим по 10 краплин тричі на тиждень.</p>
-            <p className={styles.text}>Побічний ефект. Ніяких побічних ефектів настоянки не було виявлено. Все ж якщо будуть виявлені такі симптоми, як слабкість, запаморочення голови і нудота, не варто перейматися. Це пов’язано з введенням токсинів з організму. При виникненні подібних симптомів зробіть одноденну перерву, після чого прийом настоянки можна продовжити.</p>
-            <p className={styles.text}>Протипоказання. Підвищена індивідуальна чутливість до речовин, які містяться в препараті.</p>
-            <p className={styles.text}>Взаємодія з другими ліками. Ті пацієнти, хто приймають ліки, повинні приймати настоянку за 30 хвилин до або через 30 хвилин після прийняття ліків.</p>
+            <p>Побічний ефект. Ніяких побічних ефектів настоянки не було виявлено. Все ж якщо будуть виявлені такі симптоми, як слабкість, запаморочення голови і нудота, не варто перейматися. Це пов’язано з введенням токсинів з організму. При виникненні подібних симптомів зробіть одноденну перерву, після чого прийом настоянки можна продовжити.</p>
+            <p>Протипоказання. Підвищена індивідуальна чутливість до речовин, які містяться в препараті.</p>
+            <p>Взаємодія з другими ліками. Ті пацієнти, хто приймають ліки, повинні приймати настоянку за 30 хвилин до або через 30 хвилин після прийняття ліків.</p>
             <ul>Особливості застосування.
                 <li>Приймати настоянку краще між прийомами їжі або після прийому їжі.</li>
                 <li>Якщо є проблеми зі шлунком, настоянку краще приймати до прийняття їжі.</li>
@@ -121,13 +106,13 @@ export default function Manual() {
                 <li>Для пацієнтів з тяжкими хворобами приймати 4краплі тричі на добу протягом перших 2 днів. Потім дотримуватися звичайної інструкції. </li>
                 <li>Ефективність та реакція організму на настоянку на начальних періодах її срийняття варіюється. Це залежить від особливостей організму (метаболізму) кожної окремої людини.</li>
             </ul>
-            <p className={styles.text}>Передозування. Немає.</p>
-            <p className={styles.text}>Умови та строки зберігання. Зберігання в прохолодному, захищеному від сонячного світла й недоступному від дітей місці.</p>
-            <p className={styles.text}>Застереження. Не змішуйте настоянку з горячою водою.</p>
-            <p className={styles.text}>Термін придатності. 3 роки.</p>
-            <p className={styles.text}>Умови отримання. Без рецепта.</p>
-            <p className={styles.text}>Упаковка. По 30 мл в флаконах.</p>
-            <p className={styles.text}>Приклади застосування</p>
+            <p>Передозування. Немає.</p>
+            <p>Умови та строки зберігання. Зберігання в прохолодному, захищеному від сонячного світла й недоступному від дітей місці.</p>
+            <p>Застереження. Не змішуйте настоянку з горячою водою.</p>
+            <p>Термін придатності. 3 роки.</p>
+            <p>Умови отримання. Без рецепта.</p>
+            <p>Упаковка. По 30 мл в флаконах.</p>
+            <p>Приклади застосування</p>
             <ul>Як антиоксидант і для укріплення імунітету:
                 <li>Малята 1-5 років: 1 крапля, 2 рази на добу.</li>
                 <li>Діти до 12 років: 5 крапель, 2 рази на добу.</li>

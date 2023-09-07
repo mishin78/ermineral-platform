@@ -4,13 +4,18 @@ $primary-green-light: #44853E
 $active-green-light: #046E01
 $active-color-light: #FFFFFF
 
-    
+main
+    height: 100vh
+    display: flex
+    flex-direction: column
+
 nav 
     display: flex
     align-items: center
     justify-content: space-between   
     background-color: $header-background-light 
     padding: 0.5rem
+    position: relative
 
 ul
     display: flex
@@ -39,3 +44,59 @@ img
 .r 
     color: $header-color-light
     font-weight: 100
+
+.icons 
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 0.5rem
+
+.lang 
+    cursor: pointer
+
+.langModal
+    position: absolute
+    display: flex
+    align-content: center
+    justify-content: center
+    flex-direction: column
+    right: 1.5%
+    top: 6%
+    background-color: $header-background-light
+    padding: 1rem
+    gap: 1rem
+    border-radius: 2px
+    li 
+        font-size: 1rem
+        padding: 0.5rem
+
+.langModal
+    li:hover 
+        background-color: $active-green-light
+        border-radius: 8px
+
+
+
+
+
+
+.mainPageBox 
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    flex-direction: column
+    width: 60%
+    align-self: center
+    margin: 2rem 0rem
+    h1 
+        margin: 1rem
+        font-size: 2rem
+        color: $header-background-light
+    p
+        font-size: 1rem
+        line-height: 1.7777
+        color: $header-background-light
+    img
+        width: 50rem
+        border-radius: 1rem
+        margin: 1rem 0rem
