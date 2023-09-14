@@ -1,14 +1,14 @@
 'use client'
-import './styles.sass'
+import './about.sass'
 import { useState } from 'react'
 
 export default function Manual() {
-    const [lang, setLang] = useState('ua')
+    const [lang, setLang] = useState('en')
 
     return (
         <div className='instruction'>
             {lang === 'en' && <>
-            <h1>Instruction</h1> 
+            <h1>Instruction</h1>
             <p>General characteristics: basic physical and chemical properties: yellow-brown liquid, with a fragrant odor, sediment is allowed.</p>
             <p>Ingredients: 1 bottle contains tincture of honey, chamomile, fresh ginger, black caraway seeds, Roman caraway seeds, cloves, garlic, lemon, sunflower petals, rose petals, apple vinegar.</p>
             <p>Release form. Tincture.</p>

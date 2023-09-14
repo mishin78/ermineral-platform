@@ -15,7 +15,7 @@ export default function Header({ lang, langModal, showLangModal }) {
                 <span>|</span>
                 <li>Contacts</li>
                 <span>|</span>
-                <Link href='/about'><li>Instructions</li></Link>
+                <Link href={{ pathname: '/about', query: { name: 'test' },}}><li>Instructions</li></Link>
                 <span>|</span>
                 <li>Recommendations</li>
                 <span>|</span>
@@ -48,8 +48,8 @@ export default function Header({ lang, langModal, showLangModal }) {
                 <li>Гра</li>
             </ul>}
             <div className='icons'>
-                <img src='./dark.svg'/>
-                <img onClick={() => showLangModal(!langModal)} className='lang' src='./lan.svg'/>
+                <img className='darkMode' src='./dark-mode.svg'/>
+                <img onClick={() => showLangModal(!langModal)} className='lang' src='./language-picker.svg'/>
             </div>
         </nav>
     )

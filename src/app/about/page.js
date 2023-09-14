@@ -1,13 +1,13 @@
-'use client'
 import Manual from '../manual'
-import Header from '../header'
 
-export default function Instruction() {
+
+export default function Instruction( { searchParams } ) {
+    console.log(searchParams)
 
     return (
-        <>
-            
+        <div className='instructionBox'>
+            <h1>{searchParams.name}</h1>
             <Manual />
-        </>
+        </div>
     )
 }
