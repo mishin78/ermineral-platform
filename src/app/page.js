@@ -3,12 +3,16 @@ import Header from './header'
 import './styles.sass'
 import LangModal from './langModal'
 import MainPage from './mainPage'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
-export default function Home() {
+export default function Home({ searchParams }) {
   const [ langModal, setLangModal ] = useState(false)
   const [ language, setLanguage ] = useState('en')
+
+  useEffect(() => {
+    setLanguage(searchParams.lang)
+  }, [searchParams.lang])
   
   return (
     <main>

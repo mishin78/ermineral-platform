@@ -7,7 +7,9 @@ export default function Header({ lang, langModal, showLangModal }) {
 
     return (
         <nav>
-            <Link href='/'><h1 className='titleLogo'>ERMINERAL<span className='r'>®</span></h1></Link>
+            <Link href={{ pathname: '/', query: { lang: `${lang}`},}}>
+                <h1 className='titleLogo'>ERMINERAL<span className='r'>®</span></h1>
+            </Link>
             {lang === 'en' && <ul>
                 <li>Partnership</li>
                 <span>|</span>
@@ -23,7 +25,13 @@ export default function Header({ lang, langModal, showLangModal }) {
                     ><li>Instruction</li>
                 </Link>
                 <span>|</span>
-                <li>Recommendations</li>
+                <Link
+                    href={{
+                     pathname: '/recommendations',
+                     query: { lang: `${lang}`, langModal: `${langModal}`},
+                    }}
+                    ><li>Recommendations</li>
+                </Link>
                 <span>|</span>
                 <li>Game</li>
             </ul>}
@@ -42,7 +50,13 @@ export default function Header({ lang, langModal, showLangModal }) {
                     ><li>Инструкция</li>
                 </Link>
                 <span>|</span>
-                <li>Рекомендации</li>
+                <Link
+                    href={{
+                     pathname: '/recommendations',
+                     query: { lang: `${lang}`, langModal: `${langModal}`},
+                    }}
+                    ><li>Рекомендации</li>
+                </Link>
                 <span>|</span>
                 <li>Игра</li>
             </ul>}
@@ -61,7 +75,13 @@ export default function Header({ lang, langModal, showLangModal }) {
                     ><li>Інструкція</li>
                 </Link>
                 <span>|</span>
-                <li>Рекомендації</li>
+                <Link
+                    href={{
+                     pathname: '/recommendations',
+                     query: { lang: `${lang}`, langModal: `${langModal}`},
+                    }}
+                    ><li>Рекомендації</li>
+                </Link>
                 <span>|</span>
                 <li>Гра</li>
             </ul>}

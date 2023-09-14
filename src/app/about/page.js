@@ -2,17 +2,13 @@
 import Manual from '../manual';
 import Header from '../header';
 import LangModal from '../langModal'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import '../styles.sass'
 
 
 export default function Instruction( { searchParams } ) {
     const [ langModal, setLangModal ] = useState(false)
     const [ language, setLanguage ] = useState(searchParams.lang)
-
-  
-
-    console.log(langModal, language)
 
     return (
         <div className='instructionBox'>
