@@ -1,4 +1,4 @@
-import Manual from '../manual'
+import Manual from '../manual';
 
 
 export default function Instruction( { searchParams } ) {
