@@ -1,13 +1,24 @@
+'use client'
 import Manual from '../manual';
+import Header from '../header';
+import LangModal from '../langModal'
+import { useState, useEffect } from 'react';
+import '../styles.sass'
 
 
 export default function Instruction( { searchParams } ) {
-    console.log(searchParams)
+    const [ langModal, setLangModal ] = useState(false)
+    const [ language, setLanguage ] = useState(searchParams.lang)
+
+  
+
+    console.log(langModal, language)
 
     return (
         <div className='instructionBox'>
-            <h1>{searchParams.name}</h1>
-            <Manual />
+            <Header lang={language}  langModal={langModal}  showLangModal={setLangModal} />
+            <Manual lang={language} />
+            {langModal && <LangModal setLang={setLanguage}/>}
         </div>
     )
 }

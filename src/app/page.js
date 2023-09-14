@@ -3,19 +3,12 @@ import Header from './header'
 import './styles.sass'
 import LangModal from './langModal'
 import MainPage from './mainPage'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+
 
 export default function Home() {
   const [ langModal, setLangModal ] = useState(false)
   const [ language, setLanguage ] = useState('en')
-
-  useEffect(() => {
-    localStorage.setItem('langModal', String(langModal))
-
-    return () => {
-      localStorage.removeItem('langModal')
-    }
-  } ,[langModal])
   
   return (
     <main>

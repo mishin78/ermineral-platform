@@ -1,9 +1,6 @@
-'use client'
-import './about.sass'
-import { useState } from 'react'
+import './styles.sass'
 
-export default function Manual() {
-    const [lang, setLang] = useState('en')
+export default function Manual({lang}) {
 
     return (
         <div className='instruction'>

@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 
 export default function Header({ lang, langModal, showLangModal }) {
- 
+
     return (
         <nav>
-            <h1 className='titleLogo'>ERMINERAL<span className='r'>®</span></h1>
+            <Link href='/'><h1 className='titleLogo'>ERMINERAL<span className='r'>®</span></h1></Link>
             {lang === 'en' && <ul>
                 <li>Partnership</li>
                 <span>|</span>
@@ -15,7 +15,13 @@ export default function Header({ lang, langModal, showLangModal }) {
                 <span>|</span>
                 <li>Contacts</li>
                 <span>|</span>
-                <Link href={{ pathname: '/about', query: { name: 'test' },}}><li>Instructions</li></Link>
+                <Link
+                    href={{
+                     pathname: '/about',
+                     query: { lang: `${lang}`, langModal: `${langModal}`},
+                    }}
+                    ><li>Instruction</li>
+                </Link>
                 <span>|</span>
                 <li>Recommendations</li>
                 <span>|</span>
@@ -28,7 +34,13 @@ export default function Header({ lang, langModal, showLangModal }) {
                 <span>|</span>
                 <li>Контакты</li>
                 <span>|</span>
-                <Link href='/about'><li>Инструкции</li></Link>
+                <Link
+                    href={{
+                     pathname: '/about',
+                     query: {lang: `${lang}`, langModal: `${langModal}`},
+                    }}
+                    ><li>Инструкция</li>
+                </Link>
                 <span>|</span>
                 <li>Рекомендации</li>
                 <span>|</span>
@@ -41,7 +53,13 @@ export default function Header({ lang, langModal, showLangModal }) {
                 <span>|</span>
                 <li>Контакти</li>
                 <span>|</span>
-                <Link href='/about'><li>Інструкція</li></Link>
+                <Link
+                    href={{
+                     pathname: '/about',
+                     query: {lang: `${lang}`, langModal: `${langModal}`},
+                    }}
+                    ><li>Інструкція</li>
+                </Link>
                 <span>|</span>
                 <li>Рекомендації</li>
                 <span>|</span>
