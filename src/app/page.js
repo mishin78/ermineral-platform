@@ -3,6 +3,7 @@ import Header from './header'
 import './styles.sass'
 import LangModal from './langModal'
 import MainPage from './mainPage'
+import Aside from './aside'
 import { useState, useEffect } from 'react'
 
 
@@ -18,6 +19,7 @@ export default function Home({ searchParams }) {
     <main>
       <Header lang={language}  langModal={langModal}  showLangModal={setLangModal} />
       {langModal && <LangModal setLang={setLanguage}/>}
+      <Aside lang={language} langModal={langModal}/>
       <MainPage lang={language} />
     </main>
   )

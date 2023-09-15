@@ -11,7 +11,13 @@ export default function Header({ lang, langModal, showLangModal }) {
                 <h1 className='titleLogo'>ERMINERAL<span className='r'>®</span></h1>
             </Link>
             {lang === 'en' && <ul>
-                <li>Partnership</li>
+                <Link
+                    href={{
+                     pathname: '/calculator',
+                     query: { lang: `${lang}`, langModal: `${langModal}`},
+                    }}
+                    ><li>Water cal</li>
+                </Link>
                 <span>|</span>
                 <li>About the author</li>
                 <span>|</span>
