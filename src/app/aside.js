@@ -14,7 +14,7 @@ export default function Aside( { lang, langModal } ) {
                     }}
                     ><li>Hydration Calculator</li>
                 </Link>
-                <li>Test. How well do you know your body?</li>
+                <li>Test.<br/>How well do you know your body?</li>
                 <li>Articles</li>
             </ul> 
             )}

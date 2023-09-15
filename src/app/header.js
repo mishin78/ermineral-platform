@@ -1,6 +1,5 @@
 import './styles.sass'
 import Link from 'next/link'
-// import Contacts from './contacts'
 
 
 export default function Header({ lang, langModal, showLangModal }) {

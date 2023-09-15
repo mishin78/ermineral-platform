@@ -19,8 +19,10 @@ export default function Home({ searchParams }) {
     <main>
       <Header lang={language}  langModal={langModal}  showLangModal={setLangModal} />
       {langModal && <LangModal setLang={setLanguage}/>}
-      <Aside lang={language} langModal={langModal}/>
-      <MainPage lang={language} />
+      <div className='asideMainBox'>
+        <Aside lang={language} langModal={langModal}/>
+        <MainPage lang={language} />
+      </div>
     </main>
   )
 }
