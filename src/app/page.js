@@ -11,7 +11,7 @@ export default function Home({ searchParams }) {
   const [ language, setLanguage ] = useState('en')
 
   useEffect(() => {
-    setLanguage(searchParams.lang)
+    if(searchParams.lang) setLanguage(searchParams.lang)
   }, [searchParams.lang])
   
   return (
