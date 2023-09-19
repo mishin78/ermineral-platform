@@ -3,8 +3,9 @@ import Header from '../header';
 import LangModal from '../langModal'
 import { useState } from 'react';
 import '../styles.sass'
-import Image from 'next/image';
-
+import './calculator.sass'
+import { calculateWaterForMen } from './waterCalc'
+import { calculateWaterForFemale } from './waterCalc'
 
 export default function Calculator({ searchParams }) {
     const [ langModal, setLangModal ] = useState(false)
@@ -13,6 +14,11 @@ export default function Calculator({ searchParams }) {
     const [ iScreen, setiScreen] = useState(false)
     const [ weight, setWeight ] = useState(80)
     const [ wScreen, setWScreen ] = useState(false)
+    const [ activity, setActivity ] = useState(2)
+    const [ result, setResult ] = useState(0)
+
+    const resultForMen = calculateWaterForMen(weight, activity)
+    const resultForFemale = calculateWaterForFemale(weight, activity)
 
     return (
         <div className='calcuclatorBox'>
@@ -67,7 +73,25 @@ export default function Calculator({ searchParams }) {
                         <h1>60% of our body is water. For a person weighing 70kg, that means 42 kg or 42 litres!</h1>
                     </div>
                 </div>}
+
+                <div className='activeHours'>
+                    <h6>Physical Activity</h6>
+                    <div className='hours'>
+                        <h5>{activity}</h5><span>hours</span>
+                    </div>
+                    <input 
+                        value={activity}
+                        type='range'
+                        onChange={(e) => setActivity(e.target.value)}
+                        min='0' 
+                        max="10"
+                    />
+                </div>
                 
+                {gender ? <button onClick={() => setResult(resultForFemale)} className='resultButton'>Calculate</button> 
+                : <button onClick={() => setResult(resultForMen)} className='resultButton'>Calculate</button>}
+                
+                <h1>{result.toFixed(1)}</h1>
             </div>
 
     </div>
