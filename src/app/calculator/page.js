@@ -10,7 +10,7 @@ import { calculateWaterForFemale } from './waterCalc'
 export default function Calculator({ searchParams }) {
     const [ langModal, setLangModal ] = useState(false)
     const [ language, setLanguage ] = useState(searchParams.lang)
-    const [ gender, setGender ] = useState(true)
+    const [ gender, setGender ] = useState(false)
     const [ iScreen, setiScreen] = useState(false)
     const [ weight, setWeight ] = useState(80)
     const [ wScreen, setWScreen ] = useState(false)
@@ -24,6 +24,9 @@ export default function Calculator({ searchParams }) {
         <div className='calcuclatorBox'>
             <Header lang={language}  langModal={langModal}  showLangModal={setLangModal} />
             {langModal && <LangModal setLang={setLanguage}/>}
+            <div className='titleBox'>
+                <h1>How much water should you drink per day</h1>
+            </div>
             <div className='testBox'>
                 {!iScreen && <div className='gender'>
                     <div className='up'>
@@ -77,21 +80,25 @@ export default function Calculator({ searchParams }) {
                 <div className='activeHours'>
                     <h6>Physical Activity</h6>
                     <div className='hours'>
-                        <h5>{activity}</h5><span>hours</span>
+                        <h5>{activity}</h5>
+                        <span>hours</span>
                     </div>
                     <input 
                         value={activity}
                         type='range'
                         onChange={(e) => setActivity(e.target.value)}
-                        min='0' 
-                        max="10"
+                        min='0' max="10"
                     />
+                </div>
+                
+                <div className='resultBox'>
+                    <h1>Your daily water consumption rate</h1>
+                    <h1><span>{result.toFixed(1)}</span> liters per day</h1>
                 </div>
                 
                 {gender ? <button onClick={() => setResult(resultForFemale)} className='resultButton'>Calculate</button> 
                 : <button onClick={() => setResult(resultForMen)} className='resultButton'>Calculate</button>}
                 
-                <h1>{result.toFixed(1)}</h1>
             </div>
 
     </div>

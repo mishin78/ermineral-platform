@@ -10,22 +10,58 @@ $active-color-light: #FFFFFF
     justify-content: center
     align-items: center
     box-shadow: 5px 5px 5px 5px grey
+    user-select: none
+    .titleBox
+        margin: 2rem auto
+        text-wrap: balance
+        align-self: center
+        h1
+            font-size: 3rem
+            color: $header-background-light
     .testBox
         display: flex
         flex-direction: column
         justify-content: flex-start
         align-items: center
-        width: 40rem
-        height: 40rem
-        margin: 3rem auto
+        width: 30rem
+        height: 46rem
+        margin: 1rem auto
         box-shadow: 5px 5px 5px 5px grey
         border-radius: 1rem
         background-color: #ECF2F5
-        gap: 2rem
+        gap: 1.5rem
         padding: 2rem
+        .resultBox 
+            width: 400px
+            min-height: 100px
+            box-shadow: 5px 5px 5px 5px grey
+            border-radius: 1rem
+            background-color: #294F80
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            h1
+                color: #f7f7f7
+                font-weight: 400
+                font-size: 1rem
+                padding: 0.3rem 1rem
+                margin: 0
+            span
+                font-size: 2rem
+                color: $active-color-light
+        button
+            background-color: #00496D
+            color: $active-color-light
+            font-size: 1.2rem
+            border: none
+            border-radius: 1rem
+            font-weight: 400
+            padding: 1rem
+            cursor: pointer
         .gender
             width: 400px
-            min-height: 190px
+            min-height: 170px
             box-shadow: 5px 5px 5px 5px grey
             border-radius: 1rem
             background-color: $active-color-light
@@ -57,9 +93,9 @@ $active-color-light: #FFFFFF
                 display: flex
                 align-items: center
                 justify-content: space-evenly
-                margin: 1rem auto
+                margin: 0.5rem auto
                 img
-                    width: 35px
+                    width: 32px
                     cursor: pointer
             
 
@@ -73,12 +109,12 @@ $active-color-light: #FFFFFF
             display: flex
             align-items: center
             justify-content: center
-            margin: 1rem auto
+            margin: 0.5rem auto
             h1
                 font-size: 1rem
                 font-weight: 300
                 color: $active-color-light
-                padding: 0.5rem 1rem 0rem 1rem
+                padding: 0rem 1rem 0rem 1rem
                 margin: 0
         hr
             width: 2rem
@@ -106,17 +142,17 @@ $active-color-light: #FFFFFF
 
 
 .weight
-    width: 80%
-    height: 9rem
+    width: 400px
+    min-height: 130px
     box-shadow: 5px 5px 5px 5px grey
     border-radius: 1rem
     background-color: $active-color-light
     hr
         width: 2rem
-        font-size: 2rem
+        font-size: 1.5rem
         margin: 0 1rem
         background: #00496D
-        height: 3px
+        height: 2px
         border: none
     .up
         margin: 0
@@ -125,26 +161,26 @@ $active-color-light: #FFFFFF
         justify-content: space-between
         padding: 1rem
         h6
-            font-size: 1.5rem
+            font-size: 1.2rem
             font-weight: 400
         span
-            font-size: 1rem
+            font-size: 0.8rem
             color: $active-color-light
             background-color: #00496D
-            padding: 0.5rem 1rem
+            padding: 0.5rem 0.9rem
             cursor: pointer
             border-radius: 50%
             font-weight: 500
     .numberBox
-        margin: 1rem auto
+        margin: 0.5rem auto
         display: flex
         align-items: center
         justify-content: center
         button
-            font-size: 1.3rem
+            font-size: 0.8rem
             color: $active-color-light
             background-color: #00496D
-            padding: 0.5rem 1rem
+            padding: 0.5rem 0.8rem
             cursor: pointer
             border-radius: 10rem
             font-weight: 500
@@ -160,17 +196,17 @@ $active-color-light: #FFFFFF
 
         
 .weightBlue 
-    width: 80%
-    height: 9rem
+    width: 400px
+    min-height: 130px
     box-shadow: 5px 5px 5px 5px grey
     border-radius: 1rem
     background-color: #294F80
     hr
         width: 2rem
-        font-size: 2rem
+        font-size: 1.5rem
         margin: 0 1rem
         background: $active-color-light
-        height: 3px
+        height: 2px
         border: none
     .upBlue
         margin: 0
@@ -179,11 +215,11 @@ $active-color-light: #FFFFFF
         justify-content: space-between
         padding: 1rem
         h6
-            font-size: 1.5rem
+            font-size: 1.2rem
             font-weight: 400
             color: $active-color-light
         img
-            width: 32px
+            width: 30px
             cursor: pointer
     .text
         display: flex
@@ -199,24 +235,30 @@ $active-color-light: #FFFFFF
 
 
 .activeHours
-    width: 80%
+    width: 400px
+    min-height: 130px
     box-shadow: 5px 5px 5px 5px grey
     border-radius: 1rem
     background-color: $active-color-light
-    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    h6
+        font-size: 1.2rem
+        font-weight: 400
+        padding: 0.5rem
     .hours
         display: flex
-        text-align: center
         justify-content: center
         align-items: center
-    h6
-        font-size: 1.5rem
-        font-weight: 400
-        text-align: start
-        padding: 1rem 0rem 0.4rem 1rem
-    h5
-        font-size: 2.5rem
-        padding: 0.5rem
-        font-weight: 600
-    input
-        padding: 0.5rem
+        h5
+            font-size: 2rem
+            padding: 0rem 0.5rem
+            font-weight: 600
+    input[type='range']
+        padding: 0.5rem 0
+
+        
+
+        
