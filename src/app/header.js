@@ -37,8 +37,6 @@ export default function Header({ lang, langModal, showLangModal }) {
                     }}
                     ><li>Recommendations</li>
                 </Link>
-                <span>|</span>
-                <li>Game</li>
             </ul>}
             {lang === 'ru' && <ul>
                 <li>Партнерство</li>
@@ -62,8 +60,6 @@ export default function Header({ lang, langModal, showLangModal }) {
                     }}
                     ><li>Рекомендации</li>
                 </Link>
-                <span>|</span>
-                <li>Игра</li>
             </ul>}
             {lang === 'ua' && <ul>
                 <li>Партнерство</li>
@@ -87,7 +83,6 @@ export default function Header({ lang, langModal, showLangModal }) {
                     }}
                     ><li>Рекомендації</li>
                 </Link>
-                <span>|</span>
                 <li>Гра</li>
             </ul>}
             <div className='icons'>

@@ -14,7 +14,6 @@ export default function Aside( { lang, langModal } ) {
                     }}
                     ><li>Hydration Calculator</li>
                 </Link>
-                <li>Test.<br/>How well do you know your body?</li>
                 <li>Articles</li>
             </ul> 
             )}
@@ -28,7 +27,6 @@ export default function Aside( { lang, langModal } ) {
                     }}>
                     <li>Калькулятор норми води на добу</li>
                 </Link>
-                <li>Тест. Наскільки добре ти знаєш своє тіло?</li>
                 <li>Статті</li>
             </ul> 
             )} 
@@ -42,7 +40,6 @@ export default function Aside( { lang, langModal } ) {
                     }}>
                     <li>Калькулятор нормы воды в сутки</li>
                 </Link>
-                <li>Тест. Насколько хорошо вы знаете свое тело?</li>
                 <li>Статьи</li>
             </ul> 
             )} 
