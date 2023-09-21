@@ -15,10 +15,16 @@ export default function Header({ lang, langModal, showLangModal }) {
                      pathname: '/calculator',
                      query: { lang: `${lang}`, langModal: `${langModal}`},
                     }}
-                    ><li>Water cal</li>
+                    ><li>Hydration Calculator</li>
                 </Link>
                 <span>|</span>
-                <li>About the author</li>
+                <Link
+                    href={{
+                     pathname: '/author',
+                     query: { lang: `${lang}`, langModal: `${langModal}`},
+                    }}
+                    ><li>About the author</li>
+                </Link>
                 <span>|</span>
                 <li>Contacts</li>
                 <span>|</span>
@@ -41,7 +47,13 @@ export default function Header({ lang, langModal, showLangModal }) {
             {lang === 'ru' && <ul>
                 <li>Партнерство</li>
                 <span>|</span>
-                <li>Об авторе</li>
+                <Link
+                    href={{
+                     pathname: '/author',
+                     query: { lang: `${lang}`, langModal: `${langModal}`},
+                    }}
+                    ><li>Об авторе</li>
+                </Link>
                 <span>|</span>
                 <li>Контакты</li>
                 <span>|</span>
@@ -64,7 +76,13 @@ export default function Header({ lang, langModal, showLangModal }) {
             {lang === 'ua' && <ul>
                 <li>Партнерство</li>
                 <span>|</span>
-                <li>Про автора</li>
+                <Link
+                    href={{
+                     pathname: '/author',
+                     query: { lang: `${lang}`, langModal: `${langModal}`},
+                    }}
+                    ><li>Про автора</li>
+                </Link>
                 <span>|</span>
                 <li>Контакти</li>
                 <span>|</span>
@@ -83,7 +101,6 @@ export default function Header({ lang, langModal, showLangModal }) {
                     }}
                     ><li>Рекомендації</li>
                 </Link>
-                <li>Гра</li>
             </ul>}
             <div className='icons'>
                 <img className='darkMode' src='./dark-mode.svg'/>

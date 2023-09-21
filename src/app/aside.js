@@ -14,7 +14,6 @@ export default function Aside( { lang, langModal } ) {
                     }}
                     ><li>Hydration Calculator</li>
                 </Link>
-                <li>Articles</li>
             </ul> 
             )}
 
@@ -25,9 +24,8 @@ export default function Aside( { lang, langModal } ) {
                      pathname: '/calculator',
                      query: { lang: `${lang}`, langModal: `${langModal}`},
                     }}>
-                    <li>Калькулятор норми води на добу</li>
+                    <li>Калькулятор<br/>норми води на добу</li>
                 </Link>
-                <li>Статті</li>
             </ul> 
             )} 
 
@@ -38,9 +36,8 @@ export default function Aside( { lang, langModal } ) {
                      pathname: '/calculator',
                      query: { lang: `${lang}`, langModal: `${langModal}`},
                     }}>
-                    <li>Калькулятор нормы воды в сутки</li>
+                    <li>Калькулятор<br />нормы воды в сутки</li>
                 </Link>
-                <li>Статьи</li>
             </ul> 
             )} 
         </aside>
