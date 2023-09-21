@@ -16,7 +16,7 @@ export default function Author( { searchParams } ) {
             {langModal && <LangModal setLang={setLanguage}/>}
             {info.filter(i => i.lang === language).map(j => {
                 return (
-                    <div className='infoBox'>
+                    <div key={j.lang} className='infoBox'>
                         <h1><em>{j.title}</em></h1>
                         <p>{j.p}</p>
                     </div>

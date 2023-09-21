@@ -103,7 +103,6 @@ export default function Header({ lang, langModal, showLangModal }) {
                 </Link>
             </ul>}
             <div className='icons'>
-                <img className='darkMode' src='./dark-mode.svg'/>
                 <img onClick={() => showLangModal(!langModal)} className='lang' src='./language-picker.svg'/>
             </div>
         </nav>
