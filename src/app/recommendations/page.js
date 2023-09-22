@@ -1,5 +1,6 @@
 'use client'
 import Header from '../header';
+import Footer from '../footer';
 import LangModal from '../langModal'
 import { useState } from 'react';
 import '../styles.sass'
@@ -68,6 +69,7 @@ export default function Recommendations({ searchParams }) {
                 <p>Болезни постепенно оставят вас, ваша кожа, волосы и ногти станут лучше. Вес вашего тела придёт в норму, возвратятся силы, а самое главное, качество вашей жизни улучшится.</p>
                 <p>Ваше здоровье в ваших руках. Начните инвестировать в красоту, здоровье и долголетие прямо сейчас!</p>
             </div>}
+            <Footer />
         </div>
     )
 }

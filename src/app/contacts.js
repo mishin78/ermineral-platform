@@ -1,15 +1,18 @@
-import styles from './page.module.css'
-
+import './styles.sass'
 
 export default function Contacts() {
 
     return (
-        <div className={styles.upperHeader}>
-        <h4 style={{color: "#FFE501", fontSize: "1.2rem"}}>Contacts</h4>
-        <h4 className={styles.socialWords}>Facebook</h4>
-        <h4 className={styles.socialWords}>Viber</h4>
-        <h4 className={styles.socialWords}>Telegram</h4>
-        <h4 className={styles.socialWords}>Whatsapp</h4>
+    <div>
+        <h4 className='contacts'>Contacts</h4>
+        <span>|</span>
+        <h4>Facebook</h4>
+        <span>|</span>
+        <h4>Viber</h4>
+        <span>|</span>
+        <h4>Telegram</h4>
+        <span>|</span>
+        <h4>Whatsapp</h4>
     </div>
     )
 }

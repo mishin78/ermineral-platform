@@ -8,6 +8,7 @@ main
     height: 100vh
     display: flex
     flex-direction: column
+    align-items: center
 
 
 nav 
@@ -90,6 +91,7 @@ img
     flex-direction: column
     max-width: 760px
     margin: 2rem 0rem
+    padding-inline: 2rem 
     h1 
         margin: 1rem 
         font-size: 3rem
@@ -117,8 +119,10 @@ img
     align-items: flex-start
     justify-content: center
     flex-direction: column
-    width: 60%
+    max-width: 760px
     margin-top: 2rem
+    padding-inline: 2rem 
+    margin-bottom: 3rem
     h1
         color: $header-background-light
         margin: 1rem auto
@@ -149,9 +153,11 @@ img
         align-items: flex-start
         justify-content: center
         flex-direction: column
-        width: 60%
+        max-width: 760px
         margin-top: 2rem
         gap: 0.5rem
+        padding-inline: 2rem 
+        margin-bottom: 3rem
         h1
             color: $header-background-light
             margin-bottom: 1.5rem
@@ -182,12 +188,6 @@ aside
             color: $active-color-light
             text-decoration: none
 
-.asideMainBox 
-    display: flex
-    align-items: flex-start
-    justify-content: center
-    gap: 2rem
-
 
 
 .authorBox
@@ -196,29 +196,50 @@ aside
     align-items: center
     justify-content: flex-start
     flex-direction: column 
-    background-image: url('/indonesia.jpg')
-    background-size: cover
     .infoBox
         display: flex
         align-items: flex-start
         justify-content: center
         flex-direction: column
-        width: 60%
+        max-width: 760px
         margin-top: 2rem
         gap: 0.5rem
+        padding-inline: 2rem 
         h1
         margin: 1rem 
         font-size: 3rem
         color: $header-background-light
-        color: white
         p
         color: $header-background-light
         line-height: 1.7777
         font-size: 1.2rem
-        color: white
+        margin-bottom: 3rem
 
 
 
+footer
+    background-color: $header-background-light
+    padding: 2rem
+    user-select: none
+    width: 100%
+    div
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 1rem
+        span 
+            color: $header-color-light
+        h4
+            color: #AAD3E1
+            font-size: 1rem
+            cursor: pointer
+        .contacts
+            color: $header-color-light
+            cursor: auto
+        h4:hover
+            text-decoration: underline
+        .contacts:hover
+            text-decoration: none
 
 
 
@@ -227,7 +248,6 @@ aside
 
 @media (max-width: 1000px) 
     .mainPageBox
-        padding-inline: 2rem 
         img
             width: 35rem
 
@@ -265,3 +285,29 @@ aside
     .mainPageBox
         img
             width: 400px
+
+    footer
+        div
+            display: grid
+            grid-template-columns: 1fr 1fr
+            padding-inline: 2rem
+            span
+                display: none
+            .contacts
+                display: none
+            
+
+
+
+@media (max-width: 420px)
+    .mainPageBox
+        padding-inline: 2rem
+        img
+            width: 360px
+
+
+
+@media (max-width: 390px)
+    .mainPageBox
+        img
+            width: 330px
