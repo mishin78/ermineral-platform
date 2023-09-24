@@ -1,6 +1,6 @@
 'use client'
 import Header from './header'
-import Footer from './footer'
+import Image from 'next/image'
 import './styles.sass'
 import LangModal from './langModal'
 import MainPage from './mainPage'
@@ -19,6 +19,12 @@ export default function Home({ searchParams }) {
     <main>
       <Header lang={language}  langModal={langModal}  showLangModal={setLangModal} />
       {langModal && <LangModal setLang={setLanguage}/>}
+
+        <div className='images'>
+          <img src='/animals.gif'/>
+          <img src='/food.gif'/>
+        </div>
+
         <MainPage lang={language} />
     </main>
   )

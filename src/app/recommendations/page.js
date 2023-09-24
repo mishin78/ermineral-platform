@@ -3,6 +3,7 @@ import Header from '../header';
 import LangModal from '../langModal'
 import { useState } from 'react';
 import '../styles.sass'
+import Image from 'next/image';
 
 export default function Recommendations({ searchParams }) {
     const [ langModal, setLangModal ] = useState(false)
