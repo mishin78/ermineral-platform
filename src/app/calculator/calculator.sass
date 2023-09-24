@@ -7,14 +7,12 @@ $active-color-light: #FFFFFF
 .calcuclatorBox
     display: flex
     flex-direction: column
-    justify-content: center
+    justify-content: flex-start
     align-items: center
-    box-shadow: 5px 5px 5px 5px grey
     user-select: none
     .titleBox
         margin: 2rem auto
         text-wrap: balance
-        align-self: center
         h1
             font-size: 3rem
             color: $header-background-light
@@ -262,4 +260,22 @@ $active-color-light: #FFFFFF
 
         
 
-        
+
+@media (max-width: 1000px) 
+    .titleBox
+        margin: 2rem auto
+        text-align: center
+        h1
+            text-warp: balance
+            padding-inline: 2rem
+
+
+
+
+@media (max-width: 520px)
+    .titleBox
+        h1
+        font-size: 2rem
+    .testBox
+        width: 400px
+        margin: 0

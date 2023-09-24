@@ -1,6 +1,5 @@
 'use client'
 import Header from '../header';
-import Footer from '../footer';
 import LangModal from '../langModal'
 import { useState } from 'react';
 import '../styles.sass'
@@ -257,7 +256,6 @@ export default function Calculator({ searchParams }) {
                 : <button onClick={() => setResult(resultForMen)} className='resultButton'>Рассчитать</button>}
                 
             </div></>}
-        <Footer />
     </div>
     )
 }

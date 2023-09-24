@@ -1,6 +1,5 @@
 'use client'
 import Header from '../header';
-import Footer from '../footer';
 import LangModal from '../langModal'
 import { useState } from 'react';
 import '../styles.sass'
@@ -23,7 +22,6 @@ export default function Author( { searchParams } ) {
                     </div>
                 )
             })}
-            <Footer />
         </div>
     )
 }

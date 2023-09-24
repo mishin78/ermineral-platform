@@ -1,7 +1,6 @@
 'use client'
 import Manual from '../manual';
 import Header from '../header';
-import Footer from '../footer';
 import LangModal from '../langModal'
 import { useState } from 'react';
 import '../styles.sass'
@@ -16,7 +15,6 @@ export default function Instruction( { searchParams } ) {
             <Header lang={language}  langModal={langModal}  showLangModal={setLangModal} />
             <Manual lang={language} />
             {langModal && <LangModal setLang={setLanguage}/>}
-            <Footer />
         </div>
     )
 }
