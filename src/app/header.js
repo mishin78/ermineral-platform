@@ -26,8 +26,6 @@ export default function Header({ lang, langModal, showLangModal }) {
                     ><li>About the author</li>
                 </Link>
                 <span>|</span>
-                <li>Contacts</li>
-                <span>|</span>
                 <Link
                     href={{
                      pathname: '/about',
@@ -61,8 +59,6 @@ export default function Header({ lang, langModal, showLangModal }) {
                     ><li>Об авторе</li>
                 </Link>
                 <span>|</span>
-                <li>Контакты</li>
-                <span>|</span>
                 <Link
                     href={{
                      pathname: '/about',
@@ -95,8 +91,6 @@ export default function Header({ lang, langModal, showLangModal }) {
                     }}
                     ><li>Про автора</li>
                 </Link>
-                <span>|</span>
-                <li>Контакти</li>
                 <span>|</span>
                 <Link
                     href={{

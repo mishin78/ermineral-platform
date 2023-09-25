@@ -19,7 +19,7 @@ export default function Home({ searchParams }) {
     <main>
       <Header lang={language}  langModal={langModal}  showLangModal={setLangModal} />
       {langModal && <LangModal setLang={setLanguage}/>}
-        <MainPage lang={language} />
+      <MainPage lang={language} />
     </main>
   )
 }
