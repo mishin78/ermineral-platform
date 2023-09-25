@@ -45,7 +45,13 @@ export default function Header({ lang, langModal, showLangModal }) {
                 </Link>
             </ul>}
             {lang === 'ru' && <ul>
-                <li>Партнерство</li>
+                <Link
+                    href={{
+                     pathname: '/calculator',
+                     query: { lang: `${lang}`, langModal: `${langModal}`},
+                    }}>
+                    <li>Интересно</li>
+                </Link>
                 <span>|</span>
                 <Link
                     href={{
@@ -74,7 +80,13 @@ export default function Header({ lang, langModal, showLangModal }) {
                 </Link>
             </ul>}
             {lang === 'ua' && <ul>
-                <li>Партнерство</li>
+                <Link
+                    href={{
+                     pathname: '/calculator',
+                     query: { lang: `${lang}`, langModal: `${langModal}`},
+                    }}>
+                <li>Цікаво</li>
+                </Link>
                 <span>|</span>
                 <Link
                     href={{
