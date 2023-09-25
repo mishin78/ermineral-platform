@@ -22,6 +22,10 @@ export default function Author( { searchParams } ) {
                     </div>
                 )
             })}
+            <div className='gifs'>
+                <img className='animal' src='/food.gif' />
+                <img className='animal' src='/animals.gif' />
+            </div>
         </div>
     )
 }

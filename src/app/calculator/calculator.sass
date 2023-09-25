@@ -10,12 +10,44 @@ $active-color-light: #FFFFFF
     justify-content: flex-start
     align-items: center
     user-select: none
-    .water
-        position: absolute
-        z-index: -10
-        top: 0%
-        width: 100%
-        opacity: 0.8
+    .article
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        flex-direction: column
+        max-width: 760px
+        margin-top: 2rem
+        padding-inline: 2rem 
+        margin-bottom: 3rem
+        p
+            color: $header-background-light
+            line-height: 1.7777
+            font-size: 1.2rem
+        a
+            color: #008FD6
+        h4
+            color: $header-background-light
+            font-size: 1.5rem
+            margin: 1rem 0
+        ul
+            color: $header-background-light
+            font-size: 2rem
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: center
+            margin: 1rem 0
+            li
+                color: $header-background-light
+                font-size: 1.2rem
+                list-style: circle
+            li:hover 
+                cursor: auto
+                text-decoration: none
+        img
+            width: 700px
+            border-radius: 1rem
+            margin: 1rem 0rem
     .titleBox
         margin: 2rem auto
         text-wrap: balance
