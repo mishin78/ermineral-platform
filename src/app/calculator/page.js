@@ -6,7 +6,7 @@ import '../styles.sass'
 import './calculator.sass'
 import { calculateWaterForMen } from './waterCalc'
 import { calculateWaterForFemale } from './waterCalc'
-import Image from 'next/image';
+
 
 export default function Calculator({ searchParams }) {
     const [ langModal, setLangModal ] = useState(false)
