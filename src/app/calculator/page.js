@@ -3,7 +3,6 @@ import Header from '../header';
 import LangModal from '../langModal'
 import { useState } from 'react';
 import '../styles.sass'
-import './calculator.sass'
 import { calculateWaterForMen } from './waterCalc'
 import { calculateWaterForFemale } from './waterCalc'
 

@@ -229,6 +229,311 @@ footer
 
 
 
+    
+.calcuclatorBox
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    user-select: none
+    .article
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        flex-direction: column
+        max-width: 760px
+        margin-top: 2rem
+        padding-inline: 2rem 
+        margin-bottom: 3rem
+        p
+            color: $header-background-light
+            line-height: 1.7777
+            font-size: 1.2rem
+        a
+            color: #008FD6
+        h4
+            color: $header-background-light
+            font-size: 1.5rem
+            margin: 1rem 0
+        ul
+            color: $header-background-light
+            font-size: 2rem
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: center
+            margin: 1rem 0
+            li
+                color: $header-background-light
+                font-size: 1.2rem
+                list-style: circle
+            li:hover 
+                cursor: auto
+                text-decoration: none
+        img
+            width: 700px
+            border-radius: 1rem
+            margin: 1rem 0rem
+    .titleBox
+        margin: 2rem auto
+        text-wrap: balance
+        z-index: -2
+        h1
+            font-size: 3rem
+            color: $header-background-light
+    .testBox
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        width: 30rem
+        height: 46rem
+        margin: 1rem auto
+        box-shadow: 2px 2px 2px 2px #c4c4c4
+        border-radius: 1rem
+        background-color: #ECF2F5
+        gap: 1.5rem
+        padding: 2rem
+        margin-bottom: 2rem
+        .resultBox 
+            width: 400px
+            min-height: 100px
+            box-shadow: 5px 5px 5px 5px grey
+            border-radius: 1rem
+            background-color: #294F80
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            h1
+                color: #f7f7f7
+                font-weight: 400
+                font-size: 1rem
+                padding: 0.3rem 1rem
+                margin: 0
+            span
+                font-size: 2rem
+                color: $active-color-light
+        button
+            background-color: #00496D
+            color: $active-color-light
+            font-size: 1.2rem
+            border: none
+            border-radius: 1rem
+            font-weight: 400
+            padding: 1rem
+            cursor: pointer
+        .gender
+            width: 400px
+            min-height: 170px
+            box-shadow: 5px 5px 5px 5px grey
+            border-radius: 1rem
+            background-color: $active-color-light
+            hr
+                width: 2rem
+                font-size: 1.5rem
+                margin: 0 1rem
+                background: #00496D
+                height: 2px
+                border: none
+            .up
+                margin: 0
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 1rem
+                h6
+                    font-size: 1.2rem
+                    font-weight: 400
+                span
+                    font-size: 0.8rem
+                    color: $active-color-light
+                    background-color: #00496D
+                    padding: 0.5rem 0.9rem
+                    cursor: pointer
+                    border-radius: 50%
+                    font-weight: 500
+            .images
+                display: flex
+                align-items: center
+                justify-content: space-evenly
+                margin: 0.5rem auto
+                img
+                    width: 32px
+                    cursor: pointer
+            
+
+.genderScreen
+        width: 400px
+        min-height: 170px
+        box-shadow: 5px 5px 5px 5px grey
+        border-radius: 1rem
+        background-color: #294F80
+        .images
+            display: flex
+            align-items: center
+            justify-content: center
+            margin: 0.5rem auto
+            h1
+                font-size: 1rem
+                font-weight: 300
+                color: $active-color-light
+                padding: 0rem 1rem 0rem 1rem
+                margin: 0
+        hr
+            width: 2rem
+            font-size: 1.5rem
+            margin: 0 1rem
+            background: $active-color-light
+            height: 2px
+            border: none
+        .up
+            margin: 0
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 1.05rem 1rem
+            h6
+                font-size: 1.2rem
+                color: $active-color-light
+                font-weight: 400
+            img
+                width: 30px
+                cursor: pointer
+            
+        
+
+
+
+.weight
+    width: 400px
+    min-height: 130px
+    box-shadow: 5px 5px 5px 5px grey
+    border-radius: 1rem
+    background-color: $active-color-light
+    hr
+        width: 2rem
+        font-size: 1.5rem
+        margin: 0 1rem
+        background: #00496D
+        height: 2px
+        border: none
+    .up
+        margin: 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 1rem
+        h6
+            font-size: 1.2rem
+            font-weight: 400
+        span
+            font-size: 0.8rem
+            color: $active-color-light
+            background-color: #00496D
+            padding: 0.5rem 0.9rem
+            cursor: pointer
+            border-radius: 50%
+            font-weight: 500
+    .numberBox
+        margin: 0.5rem auto
+        display: flex
+        align-items: center
+        justify-content: center
+        button
+            font-size: 0.8rem
+            color: $active-color-light
+            background-color: #00496D
+            padding: 0.5rem 0.8rem
+            cursor: pointer
+            border-radius: 10rem
+            font-weight: 500
+            border: none
+            margin-inline: 1rem
+        input
+            border: none
+            font-size: 2rem
+            width: 3.5rem
+        input:focus
+            border-color: $active-color-light
+        
+
+        
+.weightBlue 
+    width: 400px
+    min-height: 130px
+    box-shadow: 5px 5px 5px 5px grey
+    border-radius: 1rem
+    background-color: #294F80
+    hr
+        width: 2rem
+        font-size: 1.5rem
+        margin: 0 1rem
+        background: $active-color-light
+        height: 2px
+        border: none
+    .upBlue
+        margin: 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 1rem
+        h6
+            font-size: 1.2rem
+            font-weight: 400
+            color: $active-color-light
+        img
+            width: 30px
+            cursor: pointer
+    .text
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 1rem 1rem 1rem 1rem
+        h1
+            font-size: 0.9rem
+            font-weight: 300
+            color: $active-color-light
+            padding: 0rem
+
+
+
+.activeHours
+    width: 400px
+    min-height: 130px
+    box-shadow: 5px 5px 5px 5px grey
+    border-radius: 1rem
+    background-color: $active-color-light
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    h6
+        font-size: 1.2rem
+        font-weight: 400
+        padding: 0.5rem
+    .hours
+        display: flex
+        justify-content: center
+        align-items: center
+        h5
+            font-size: 2rem
+            padding: 0rem 0.5rem
+            font-weight: 600
+    input[type='range']
+        padding: 0.5rem 0
+
+        
+
+
+
+@media (max-width: 1055px)
+    .calcuclatorBox
+        .titleBox
+            h1
+                text-align: center
+
+
 
 
 
@@ -252,22 +557,20 @@ footer
         flex-direction: column
         gap: 1rem
         padding: 1rem
+    
 
-
-@media (max-width: 782px)
-    .asideMainBox
-        flex-direction: column
-        gap: 0rem
-        justify-content: center
-        align-items: center 
-        aside
-            margin: 1rem 0rem 0rem 0rem
-
+@media (max-width: 788px)
+    .calcuclatorBox
+        .article
+            .glass
+                width: 100%
+                margin: 0
 
 @media (max-width: 720px)
     .authorBox
         .animal
             width: 300px
+
 
 @media (max-width: 705px)
     nav
@@ -290,6 +593,11 @@ footer
         .animal
             width: 250px
 
+    .calcuclatorBox
+        .titleBox
+            h1
+                font-size: 2.5rem
+
     footer
         div
             display: grid
@@ -306,6 +614,26 @@ footer
         .animal
             width: 200px
             margin-bottom: 1rem
+    .calcuclatorBox
+        .testBox
+            width: 380px
+            background: white
+            box-shadow: none
+            .gender
+                width: 360px
+            .genderScreen
+                width: 360px
+            .weight
+                width: 360px
+            .weightBlue
+                width: 360px
+            .activeHours
+                width: 360px
+            .resultBox
+                width: 360px
+
+
+
 
 @media (max-width: 420px)
     .mainPageBox
@@ -316,6 +644,10 @@ footer
         .animal
             width: 170px
             margin-bottom: 1rem
+    .calcuclatorBox
+        .titleBox
+            h1
+                font-size: 2rem
 
 
 @media (max-width: 390px)
