@@ -103,7 +103,7 @@ export default function Calculator({ searchParams }) {
             <div className='article'>
                 <p>How much water should you drink a day? Most people need about four to six cups of plain water each day. But it may be surprising to learn that water intake is an individualized number.</p>
                 <p>While the daily four-to-six cup rule is for generally healthy people, that amount differs based on how much water they take in from other beverages and food sources. Also, certain health conditions, medications, activity level, and ambient temperature influence total daily water intake.</p>
-                <p>Unfortunately, many of us aren't getting enough to drink, especially older adults. We'll help you understand how much water you need to drink in a day to stay healthy.</p>
+                <p>Unfortunately, many of us arent getting enough to drink, especially older adults. Well help you understand how much water you need to drink in a day to stay healthy.</p>
                 <ul>
                     Benefits of drinking water
                     <li>carrying nutrients and oxygen to your cells</li>
@@ -119,7 +119,7 @@ export default function Calculator({ searchParams }) {
                 <img className='glass' src='glass.jpg'/>
                 <h4>Fluids to keep you hydrated</h4>
                 <p>Water is not your only choice when it comes to hydration. All beverages containing water contribute toward your daily needs. And some people even tout the benefits of <a href='https://www.health.harvard.edu/blog/when-replenishing-fluids-does-milk-beat-water-202211142849'>milk</a> for hydration.</p>
-                <p>And it's a myth that caffeinated beverages are dehydrating because they make you urinate. They do, but over the course of the day, the water from these beverages still leads to a net positive contribution to total fluid consumption.</p>
+                <p>And its a myth that caffeinated beverages are dehydrating because they make you urinate. They do, but over the course of the day, the water from these beverages still leads to a net positive contribution to total fluid consumption.</p>
                 <p>Of course, there are many reasons why <a href='https://www.health.harvard.edu/blog/big-benefits-plain-water-201605269675'>water is still the better choice</a>. Remember, sugary drinks can lead to weight gain and <a href='https://www.health.harvard.edu/staying-healthy/playing-with-the-fire-of-inflammation'>inflammation</a>, which can increase your risk for developing diseases such as diabetes. Too much caffeine can give you the jitters or keep you from sleeping.</p>
             </div>
             </>}
@@ -203,7 +203,7 @@ export default function Calculator({ searchParams }) {
             </div>
             <div className='article'>
                 <p>Скільки води потрібно пити в день? Більшість людей потребують від чотирьох до шести чашок звичайної води щодня. Але, можливо, ви здивуєтеся, дізнавшись, що споживання води - це індивідуальна справа.</p>
-                <p>Хоча правило чотирьох-шести склянок на день розраховане на загалом здорових людей, ця кількість залежить від того, скільки води вони отримують з іншими напоями та продуктами харчування. Крім того, певні стани здоров'я, ліки, рівень активності та температура навколишнього середовища впливають на загальну добову норму споживання води.</p>
+                <p>Хоча правило чотирьох-шести склянок на день розраховане на загалом здорових людей, ця кількість залежить від того, скільки води вони отримують з іншими напоями та продуктами харчування. Крім того, певні стани здоровя, ліки, рівень активності та температура навколишнього середовища впливають на загальну добову норму споживання води.</p>
                 <p>На жаль, багато хто з нас не отримує достатньої кількості води, особливо люди похилого віку. Ми допоможемо вам зрозуміти, скільки води потрібно випивати в день, щоб залишатися здоровим.</p>
                 <ul>
                     Користь від споживання питної води
@@ -212,7 +212,7 @@ export default function Calculator({ searchParams }) {
                     <li>сприяння травленню</li>
                     <li>запобігання запорам</li>
                     <li>нормалізації артеріального тиску</li>
-                    <li>пом'якшення суглобів</li>
+                    <li>помякшення суглобів</li>
                     <li>захист органів і тканин</li>
                     <li>регулювання температури тіла</li>
                     <li>підтримання електролітного (натрієвого) балансу</li>
@@ -221,7 +221,7 @@ export default function Calculator({ searchParams }) {
                 <h4>Рідини для підтримання водного балансу</h4>
                 <p>Вода - не єдиний вибір, коли мова йде про гідратацію. Усі напої, що містять воду, задовольняють ваші щоденні потреби. А деякі люди навіть говорять про користь <a href='https://www.health.harvard.edu/blog/when-replenishing-fluids-does-milk-beat-water-202211142849'>молока</a> для зволоження організму.</p>
                 <p>І це міф, що напої з кофеїном зневоднюють організм, тому що змушують сечовипускання. Це так, але протягом дня вода з цих напоїв все одно призводить до чистого позитивного внеску в загальне споживання рідини.</p>
-                <p>Звичайно, є багато причин, чому <a href='https://www.health.harvard.edu/blog/big-benefits-plain-water-201605269675'>вода все ще є кращим вибором</a>. Пам'ятайте, що солодкі напої можуть призвести до збільшення ваги і <a href='https://www.health.harvard.edu/staying-healthy/playing-with-the-fire-of-inflammation'>запалення</a>, що може підвищити ризик розвитку таких захворювань, як діабет. Занадто велика кількість кофеїну може викликати тремтіння або заважати вам спати.</p>
+                <p>Звичайно, є багато причин, чому <a href='https://www.health.harvard.edu/blog/big-benefits-plain-water-201605269675'>вода все ще є кращим вибором</a>. Памятайте, що солодкі напої можуть призвести до збільшення ваги і <a href='https://www.health.harvard.edu/staying-healthy/playing-with-the-fire-of-inflammation'>запалення</a>, що може підвищити ризик розвитку таких захворювань, як діабет. Занадто велика кількість кофеїну може викликати тремтіння або заважати вам спати.</p>
             </div>
             </>}
 

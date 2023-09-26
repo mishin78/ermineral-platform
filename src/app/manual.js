@@ -10,7 +10,7 @@ export default function Manual({lang}) {
             <p>Ingredients: 1 bottle contains tincture of honey, chamomile, fresh ginger, black caraway seeds, Roman caraway seeds, cloves, garlic, lemon, sunflower petals, rose petals, apple vinegar.</p>
             <p>Release form. Tincture.</p>
             <p>Pharmacotherapeutic group. Immunomodulatory and antiviral agent. The effectiveness of the tincture is due to a wide range of biological activity: anti-inflammatory, anti proliferative, antiviral, immunomodulatory.</p>
-            <p>Indications for use. Used by adults and children as immunomodulator a substance that affects the body's defenses and biostimulant (substances that increase metabolism, stimulate body defenses) in conditions and diseases, accompanied by a decrease in immunity, including acute and chronic suppurative inflammatory diseases of bones and soft tissues; acute and chronic viral and bacterial infections.</p>
+            <p>Indications for use. Used by adults and children as immunomodulator a substance that affects the bodys defenses and biostimulant (substances that increase metabolism, stimulate body defenses) in conditions and diseases, accompanied by a decrease in immunity, including acute and chronic suppurative inflammatory diseases of bones and soft tissues; acute and chronic viral and bacterial infections.</p>
             <p>Dosage and mode of application. Tincture is taken with water. Tincture is appointed to be taken inside for adults 5-10 drops 1-2 times a day for 1 months. Repeated courses are carried out in 1-2 weeks. Best effect is observed when taking tincture for 3-4 months.
                 Children aged 1-5 years, 1 drop 2 times a day before meals. Children over 12 years old 5 drops 2 times a day before meals.
                 Pregnant and nursing 10-15 drops 3 times a day.</p>
@@ -39,7 +39,7 @@ export default function Manual({lang}) {
                 <li>Arthritis: 10 drops, 3-4 times a day.</li>
                 <li>Asthenia: 10 drops, 3 times a day.</li>
                 <li>Asthma: 10 drops, 3-4 times a day.</li>
-                <li>Parkinson's disease: 10 drops, 3 times a day.</li>
+                <li>Parkinsons disease: 10 drops, 3 times a day.</li>
                 <li>Liver disease: 10 drops, 3 times a day.</li>
                 <li>Heart disease: 10 drops, 2 times a day.</li>
                 <li>Kidney disease: 5-10 drops, 2 times a day.</li>
@@ -88,7 +88,7 @@ export default function Manual({lang}) {
             <p>Склад: 1 флакон містить настоянку з меду, ромашки, свіжого імбиру, чорного кмину, римського кмину, гвоздики, часнику, лимона, пелюсток соняшнику, пелюсток троянд, яблуневого оцту.</p>
             <p>Форма випуску. Настоянка.</p>
             <p>Фармакотерапевтична група. Імуномоделюючий і противірусний засіб. Ефективність препарату обумовлена широким спектром біологічної активності: протизапальна, антипроліферативна, противірусна, імуномоделююча. </p>
-            <p>Показання до застосування. Застосовують у дорослих та дітей як імуномодулятор речовина, що впливає на захисту силу організму і біостимулятор (речовина, що підвищує обмін речовин, стимулює захисні сили організму) при станах і захворюваннях, що супроводжуються пониженням імунітету, в тому числі при гострих і хронічних гнійно-запальних захворюваннях кісток і м'яких тканин; гострих і хронічних вірусних і бактеріальних інфекціях</p>
+            <p>Показання до застосування. Застосовують у дорослих та дітей як імуномодулятор речовина, що впливає на захисту силу організму і біостимулятор (речовина, що підвищує обмін речовин, стимулює захисні сили організму) при станах і захворюваннях, що супроводжуються пониженням імунітету, в тому числі при гострих і хронічних гнійно-запальних захворюваннях кісток і мяких тканин; гострих і хронічних вірусних і бактеріальних інфекціях</p>
             <p>Спосіб застосування дози. Настоянка приймається з водою. Настоянку назначають всередину дорослим по 5-10 крапель 1-2 рази на добу протягом місяця. Повторні курси проводять через 1-2 тижня. Найкращий ефект спостерігається при прийомі настоянки протягом 3-4 місяців.
                                        Дітям віком 1-5 років по 1 краплі двічі на добу до прийому їжі. Дітям віком старше 12 років по 5 краплин двічі на добу до прийому їжі. Вагітним та годуючим по 10 краплин тричі на тиждень.</p>
             <p>Побічний ефект. Ніяких побічних ефектів настоянки не було виявлено. Все ж якщо будуть виявлені такі симптоми, як слабкість, запаморочення голови і нудота, не варто перейматися. Це пов’язано з введенням токсинів з організму. При виникненні подібних симптомів зробіть одноденну перерву, після чого прийом настоянки можна продовжити.</p>
