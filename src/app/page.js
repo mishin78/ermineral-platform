@@ -5,6 +5,7 @@ import './styles.sass'
 import LangModal from './langModal'
 import MainPage from './mainPage'
 import { useState, useEffect } from 'react'
+import Head from 'next/head';
 
 
 export default function Home({ searchParams }) {
@@ -17,6 +18,10 @@ export default function Home({ searchParams }) {
   
   return (
     <main>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="green.png" />
+      </Head>
       <Header lang={language}  langModal={langModal}  showLangModal={setLangModal} />
       {langModal && <LangModal setLang={setLanguage}/>}
       <MainPage lang={language} />
