@@ -10,7 +10,7 @@ import Head from 'next/head';
 
 export default function Home({ searchParams }) {
   const [ langModal, setLangModal ] = useState(false)
-  const [ language, setLanguage ] = useState('en')
+  const [ language, setLanguage ] = useState('ru')
 
   useEffect(() => {
     if(searchParams.lang) setLanguage(searchParams.lang)
