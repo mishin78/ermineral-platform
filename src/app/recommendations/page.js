@@ -1,6 +1,6 @@
 'use client'
 import Header from '../header';
-import LangModal from '../langModal'
+import LangModal from '../langModal';
 import { useState } from 'react';
 import '../styles.sass'
 import Image from 'next/image';
